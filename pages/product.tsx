@@ -66,7 +66,7 @@ function ConsultationForm() {
             });
             console.log('JWT decoded:', decodeJwt(jwt));
             
-            await fetchEventSource('/api', {
+            await fetchEventSource('/api/consultation', {
                 signal: controller.signal,
                 method: 'POST',
                 headers: {
